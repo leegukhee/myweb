@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<style>
+  body{
+
+  }
+.container{
+  display:flex;
+}
+
+
+  #wrapper{
+background-color:#f8f9fa;
+
+  }
+
+  #header{
+    font-size: 45px;
+    font-family:cursive;
+    height:60px;
+  }
+
+  h1{
+    text-align:center;
+    font-weight:80;
+    text-shadow:4px 4px 4px gray;
+
+  }
+#wrapper a{
+  color:#737881;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-weight:bold;
+}
+
+
+.Info{
+  position:relative;
+  height:400px;
+  margin:40px auto 0;
+}
+.Info .tittle{
+  clear:both;
+  height:30px;
+  font-size:30px;
+}
+.recommend{
+  margin-top:55px;
+
+}
+.recommend li{
+  position:relative;
+  float:left;
+  width:200px;
+  height:342px;
+  margin-right:20px;
+  margin-left:50px;
+  transition: all ease 1s;
+}
+.recommend li:hover{
+  transform: scale(1.3);
+}
+.recommend .img{
+  display:block;
+  width:153px;
+  height:192px;
+  overflow:hidden;
+}
+
+.recommend .name{
+  text-align:center;
+  display:block;
+  width:129px;
+  height:40px;
+  margin:8px 0 0 12px;
+  font:15px;
+  font-family:sans-serif;
+  font-weight:bold;
+  color:#17191d;
+}
+.all{
+  clear:both;
+  position:relative;
+  padding-left:24px;
+  margin:0 auto;
+}
+
+.warning{
+  width:100%;
+  height:70px;
+  background-color:yellow;
+}
+
+.warning h2{
+  text-align:center;
+  font-size:50px;
+  color:#f00;
+}
+
+</style>
+</head>
+
+<body style="overflow-x: hidden">
+      
+ <div id="wrapper" id="index" >
+
+  <div id="header" stlye="min-width:1007px;">
+    <h1>GAME</h1></div>
+
+      <div data-role="content">     
+        <div class="Info">
+          <div class="tittle">
+            <h2>추천게임</h2>
+          </div>
+        <div class="recommend">
+        <ul><li><a href="https://www.pubg.com/ko/" onclick="sendClick2Log(this);" obj="P_MAIN">
+        <span><img class="img" src="배그.jpg" width="153" height="192"alt></span>
+        <span class="name">배틀그라운드</span></a></li>
+
+        <li><a href="http://kart.nexon.com/Channel/Gate.aspx" onclick="sendClick2Log(this);" obj="P_MAIN">
+        <span><img class="img" src="카트.jpg" width="153" height="192"alt></span>
+        <span class="name">카트라이더</span></a></li>
+
+        <li><a href="https://www.rockstargames.com/grandtheftauto/" onclick="sendClick2Log(this);" obj="P_MAIN">
+        <span><img class="img" src="gta.jpg" width="153" height="192"alt></span>
+        <span class="name">GTA</span></a></li>
+
+        <li><a href="https://kr.leagueoflegends.com/ko-kr/" onclick="sendClick2Log(this);" obj="P_MAIN">
+        <span><img class="img" src="lol.jpg" width="153" height="192"alt></span>
+        <span class="name">리그오브레전드</span></a></li>
+
+        <li><a href="https://www.ubisoft.com/ko-kr/game/rainbow-six/siege" onclick="sendClick2Log(this);" obj="P_MAIN">
+        <span><img class="img" src="레인보우식스.jpg" width="153" height="192"alt></span>
+        <span class="name">레인보우식스</span></a></li>
+
+      </ul>
+</div>
+</div>
+
+         <div class="all">
+            <h2>전체게임</h2>
+          <div class="viewtype">
+
+        
+        <ul data-role="listview" data-inset="true" >
+
+          <li><a href="rpg.html" data-transition="slide" data-ajax="false">RPG</a></li>
+
+          <li><a href="shooting.html" data-transition="slide"data-ajax="false">SHOTTING</a></li>
+
+          <li><a href="sports.html" data-transition="slide"data-ajax="false">SPORTS</a></li>
+
+          <li><a href="aos.html" data-transition="slide"data-ajax="false">AOS/MOBA</a></li>
+
+          <li><a href="simulation.html" data-transition="slide"data-ajax="false">SIMULATION</a></li>
+
+          <li><a href="casual.html" data-transition="slide"data-ajax="false">CAUSUL</a></li>
+
+          <li><a href="rhythm.html" data-transition="slide"data-ajax="false">RHYTHM</a></li>
+
+          <li><a href="rts.html" data-transition="slide"data-ajax="false">RTS</a></li>
+
+        </ul>
+        </div>
+      </div>
+      <div class="warning">
+        <h2>과도한 게임은 건강을 해칩니다!</h2>
+      </div>
+
+
+      <div data-role="footer" data-position="fixed">
+
+        <h4>&copy; 컴퓨터공학과 18114182 이국희</h4>
+
+      </div>
+
+    </div>
+
+</body>
+</html>
